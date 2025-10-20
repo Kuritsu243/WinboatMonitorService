@@ -7,8 +7,6 @@ Requires=docker.service
 Type=simple
 ExecStart=/bin/bash /usr/local/bin/winboat_monitor.sh
 Restart=on-failure
-User=kuritsu
-
 [Install]
 WantedBy=multi-user.target
 
