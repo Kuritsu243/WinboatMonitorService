@@ -1,6 +1,6 @@
 
 ## Winboat Monitor Service by Kuritsu
-I'm sure like most of you, I've been really enjoying [WinBoat](https://github.com/TibixDev/winboat)as an alternative to WinApps or Cassowary. However, if you're limited on memory, battery life etc. it'd be a nice touch to have the docker container auto-shutdown after a certain period of inactivity. 
+I'm sure like most of you, I've been really enjoying [WinBoat](https://github.com/TibixDev/winboat) as an alternative to WinApps or Cassowary. However, if you're limited on memory, battery life etc. it'd be a nice touch to have the docker container auto-shutdown after a certain period of inactivity. 
 
 So! I've written a very very basic bash script and service that can do this for you.
 
