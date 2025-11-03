@@ -1,12 +1,12 @@
 [Unit]
-Description = WinBoat Virtual Machine Monitoring Service
+Description=WinBoat Virtual Machine Monitoring Service
 After=docker.service
 Requires=docker.service
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /usr/local/bin/winboat_monitor.sh
+ExecStart=stdbuf -oL /usr/local/bin/winboat_monitor.sh
 Restart=on-failure
+
 [Install]
 WantedBy=multi-user.target
-
