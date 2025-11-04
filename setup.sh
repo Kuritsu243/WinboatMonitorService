@@ -33,8 +33,7 @@ fi
 # The --quiet flag prevents any output (like "active") from being printed.
 if systemctl is-active --quiet "$SERVICE_NAME"; then
     echo "Service is running. Stopping it now..."
-    # Use sudo if the script isn't already running as root
-    sudo systemctl stop "$SERVICE_NAME"
+    systemctl stop "$SERVICE_NAME"
     echo "Service stopped."
 fi
 
